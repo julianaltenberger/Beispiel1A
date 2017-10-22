@@ -18,6 +18,10 @@ int main(int argc, char *argv[])
     }
    printf("test");
 
+   if (argc == 0) {
+       mycompress("stdout.txt", "stdin.txt");
+   }
+
    if (argc == 2){
        mycompress(o_arg, "stdin.txt");
    }
