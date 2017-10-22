@@ -13,7 +13,7 @@ void give_input(const char *name) {
     {} 
         
 
-    if ((out = fopen("outfile.txt", "w")) == NULL)
+    if ((out = fopen("a_arg", "w")) == NULL)
     {}
     while (fgets(buffer, sizeof(buffer), in) != NULL) {
         int i;
