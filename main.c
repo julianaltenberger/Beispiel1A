@@ -16,8 +16,8 @@ int main(int argc, char *argv[])
             case '?': /* invalid Option */
                 break;
     }
-   printf("test");
-
+    printf("test");
+    printf("%d", argc);
    if (argc == 0) {
        printf("argc0");
        mycompress("stdout.txt", "stdin.txt");
