@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
             case '?': /* invalid Option */
                 break;
     }
-   
+   printf("test");
 
    if (argc > 2){
 
