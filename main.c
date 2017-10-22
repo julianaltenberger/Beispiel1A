@@ -11,16 +11,13 @@ int main(int argc, char *argv[])
     int c = getopt(argc, argv, "o:");
         switch(c) {
             case 'o': o_arg = optarg;
-            printf("%s", optarg);
-            printf("bla");
-            printf("%s", o_arg);
-            printf("bla2");
+            
                 break;
             case '?': /* invalid Option */
                 break;
     }
 
-    printf("%s", o_arg);
+    mycompress(o_arg);
 
 }
 
