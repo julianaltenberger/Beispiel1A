@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[])
 
-char *a_arg = NULL;
+char *o_arg = NULL;
 int c;
 
 c = getopt(argc, argv, "o:");
