@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
             
                 break;
             case '?': /* invalid Option */
+                printf("case?");
                 break;
     }
     printf("test");
