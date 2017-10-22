@@ -16,7 +16,10 @@ int main(int argc, char *argv[])
             case '?': /* invalid Option */
                 break;
     }
-
+    printf("%d", argc);
+    for (i=0;i++;i <= argc) {
+        printf("%s", argv[i]);
+    }
     mycompress(o_arg);
 
 }
