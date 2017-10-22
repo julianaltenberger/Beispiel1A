@@ -2,6 +2,7 @@
 #include <errno.h>
 #include <string.h>
 #include "mycompress.h"
+#include "main.c"
 
 
 void give_input(const char *name) {
