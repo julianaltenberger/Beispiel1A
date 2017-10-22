@@ -1,5 +1,8 @@
 #include "mycompress.h"
 
+
+int main(int argc, char *argv[])
+
 char *a_arg = "stdout.txt";
 int c;
 
@@ -10,7 +13,7 @@ c = getopt(argc, argv, "o:");
         case '?': /* invalid Option */
             break;
     }
-int main(int argc, char *argv[])
+    
 {
     give_input("asdf");
 
