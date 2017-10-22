@@ -4,9 +4,8 @@
 int main(int argc, char *argv[])
 
 char *o_arg = NULL;
-int c;
 
-c = getopt(argc, argv, "o:");
+int c = getopt(argc, argv, "o:");
     switch(c) {
         case 'o': o_arg = optarg;
             break;
