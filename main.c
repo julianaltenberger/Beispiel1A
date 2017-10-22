@@ -25,12 +25,12 @@ int main(int argc, char *argv[])
    }
 
    if (argc == 3){
-       printf("argc2");
+       printf("argc3");
        mycompress(o_arg, "stdin.txt");
    }
    if (argc > 3){
-        printf("argc>2");
-        for (int i = 3; i <= argc; i++){
+        printf("argc>3");
+        for (int i = 3; i < argc; i++){
             printf("%d", i);
             mycompress(o_arg, argv[i]);
         }
