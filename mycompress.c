@@ -2,10 +2,10 @@
 #include <errno.h>
 #include <string.h>
 #include "mycompress.h"
-#include "mycompress.c"
+#include "main.c"
 
 
-void give_input(const char *name) {
+void mycompress(const char *name) {
 
     FILE *in, *out;
     char buffer[1024];
