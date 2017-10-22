@@ -1,1 +1,1 @@
-void give_input(const char *name);
+void mycompress(const char *name);
