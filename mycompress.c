@@ -9,12 +9,16 @@ void mycompress(const char *outfile, const char *infile) {
     FILE *in, *out;
     char buffer[1024];
 
-    if ((in = fopen(infile, "r")) == NULL)
-    {} 
+    if ((in = fopen(infile, "r")) == NULL) {
+        fprintf(stderr, "fopen input failed: %s\n", strerror(errno));
+        exit(EXIT_FAILURE);
+    } 
         
 
-    if ((out = fopen(outfile, "a")) == NULL)
-    {}
+    if ((out = fopen(outfile, "a")) == NULL) {
+        fprintf(stderr, "fopen output failed: %s\n", strerror(errno));
+        exit(EXIT_FAILURE);
+    }
     while (fgets(buffer, sizeof(buffer), in) != NULL) {
         int i;
         int k = 1;
