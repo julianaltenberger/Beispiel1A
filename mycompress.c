@@ -2,7 +2,6 @@
 #include <errno.h>
 #include <string.h>
 #include "mycompress.h"
-#include "main.c"
 
 
 void mycompress(const char *outfile) {
