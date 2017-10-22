@@ -4,12 +4,12 @@
 #include "mycompress.h"
 
 
-void mycompress(const char *outfile) {
+void mycompress(const char *outfile, const char *infile) {
 
     FILE *in, *out;
     char buffer[1024];
 
-    if ((in = fopen("data.txt", "r")) == NULL)
+    if ((in = fopen(infile, "r")) == NULL)
     {} 
         
 
