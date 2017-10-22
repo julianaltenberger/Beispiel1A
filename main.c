@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 
         if (argc > 1 && optc == 0) {
 
-            fprintf("blalba überleg i ma nochher");
+            fprintf(stderr, "blalba überleg i ma nochher", strerror(errno));
             exit(EXIT_FAILURE);
         }
 
