@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
    if (argc > 2){
 
         for (int i = 3; i <= argc; i++){
+            prinft("%d", i);
             mycompress(o_arg, argv[i]);
         }
 
