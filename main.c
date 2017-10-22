@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
        mycompress(o_arg, "stdin.txt");
    }
    if (argc > 2){
-
+        printf("WARUM");
         for (int i = 3; i <= argc; i++){
             printf("%d", i);
             mycompress(o_arg, argv[i]);
