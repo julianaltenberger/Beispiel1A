@@ -18,6 +18,9 @@ int main(int argc, char *argv[])
     }
    printf("test");
 
+   if (argc = 2){
+       mycompress(o_arg, "stdin.txt");
+   }
    if (argc > 2){
 
         for (int i = 3; i <= argc; i++){
