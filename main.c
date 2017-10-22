@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
                 break;
     }
 
-printf(out, %s, o_arg);
+printf(%s, o_arg);
 mycompress(o_arg);
 
 }
