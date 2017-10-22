@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
                 break;
     }
     printf("%d", argc);
-    for (int i=0;i<= argc, i++) {
+    for (int i=0;i<= argc; i++) {
         printf("%s", argv[i]);
     }
     mycompress(o_arg);
