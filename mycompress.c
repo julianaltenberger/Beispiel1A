@@ -13,7 +13,7 @@ void mycompress(const char *outfile, const char *infile) {
     {} 
         
 
-    if ((out = fopen(outfile, "w")) == NULL)
+    if ((out = fopen(outfile, "a")) == NULL)
     {}
     while (fgets(buffer, sizeof(buffer), in) != NULL) {
         int i;
