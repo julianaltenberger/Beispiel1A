@@ -8,7 +8,7 @@ int c;
 
 c = getopt(argc, argv, "o:");
     switch(c) {
-        case 'o': a_arg = optarg;
+        case 'o': o_arg = optarg;
             break;
         case '?': /* invalid Option */
             break;
