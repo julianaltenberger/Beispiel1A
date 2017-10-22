@@ -14,7 +14,7 @@ void give_input(const char *name) {
     {} 
         
 
-    if ((out = fopen(o_arg, "w")) == NULL)
+    if ((out = fopen("o_arg", "w")) == NULL)
     {}
     while (fgets(buffer, sizeof(buffer), in) != NULL) {
         int i;
