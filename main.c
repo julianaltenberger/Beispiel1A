@@ -1,6 +1,6 @@
 #include "mycompress.h"
 
-char *a_arg = NULL;
+char *a_arg = "stdout.txt";
 int c;
 
 while ( (c = getopt(argc, argv, "o:")) != -1) {
