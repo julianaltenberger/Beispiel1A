@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[])
 
-char *a_arg = "stdout.txt";
+char *a_arg = NULL;
 int c;
 
 c = getopt(argc, argv, "o:");
@@ -13,7 +13,7 @@ c = getopt(argc, argv, "o:");
         case '?': /* invalid Option */
             break;
     }
-    
+
 {
     give_input("asdf");
 
