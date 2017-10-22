@@ -1,0 +1,1 @@
+void give_input(const char *name);
