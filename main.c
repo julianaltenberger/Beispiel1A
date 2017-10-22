@@ -8,10 +8,12 @@
 int main(int argc, char *argv[])
 {
     char *o_arg = NULL;
+    int optc = 0;
 
     int c = getopt(argc, argv, "o:");
         switch(c) {
             case 'o': o_arg = optarg;
+                optc++;
             
                 break;
             case '?': /* invalid Option */
@@ -36,7 +38,11 @@ int main(int argc, char *argv[])
             mycompress(o_arg, argv[i]);
         }
 
+        if (argc > 1 && optc == 0) {
 
+            fprintf("blalba überleg i ma nochher");
+            exit(EXIT_FAILURE);
+        }
 
    }
     
