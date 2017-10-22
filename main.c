@@ -18,16 +18,16 @@ int main(int argc, char *argv[])
     }
     printf("test");
     printf("%d", argc);
-   if (argc == 0) {
+   if (argc == 1) {
        printf("argc0");
        mycompress("stdout.txt", "stdin.txt");
    }
 
-   if (argc == 2){
+   if (argc == 3){
        printf("argc2");
        mycompress(o_arg, "stdin.txt");
    }
-   if (argc > 2){
+   if (argc > 3){
         printf("argc>2");
         for (int i = 3; i <= argc; i++){
             printf("%d", i);
