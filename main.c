@@ -16,8 +16,8 @@ int main(int argc, char *argv[])
                 break;
     }
 
-
-    give_input("asdf");
+printf(out, %s, o_arg);
+mycompress(o_arg);
 
 }
 
