@@ -5,7 +5,7 @@
 #include "main.c"
 
 
-void mycompress(const char *name) {
+void mycompress(const char *outfile) {
 
     FILE *in, *out;
     char buffer[1024];
@@ -14,7 +14,7 @@ void mycompress(const char *name) {
     {} 
         
 
-    if ((out = fopen(o_arg, "w")) == NULL)
+    if ((out = fopen(outfile, "w")) == NULL)
     {}
     while (fgets(buffer, sizeof(buffer), in) != NULL) {
         int i;

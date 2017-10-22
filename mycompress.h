@@ -1,1 +1,1 @@
-void mycompress(const char *name);
+void mycompress(const char *outfile);
