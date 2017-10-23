@@ -26,7 +26,7 @@ void mycompress(const char *outfile, const char *infile) {
     while (fgets(buffer, sizeof(buffer), in) != NULL) {
         int i;
         int k = 1;
-        printf("%s", buffer[i]);
+        
         for (i = 1; buffer[i] != '\0'; i++)
             {
             
@@ -79,9 +79,10 @@ void mycompress2() {
     while (fgets(buffer, sizeof(buffer), in) != NULL) {
         int i;
         int k = 1;
+        
         for (i = 1; buffer[i] != '\0'; i++)
             {
-            
+                printf("%s", buffer[i]);
                 if (buffer[i] == buffer[i-1])
                     {
                         k++;
