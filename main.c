@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
        fgets(stdin_string, 1024, stdin);
 
 
-       mycompress(stdout, stdin);
+       mycompress(*stdout, *stdin);
    }
 
    if (argc == 3){
