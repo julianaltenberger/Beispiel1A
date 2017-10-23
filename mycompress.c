@@ -16,7 +16,7 @@ void mycompress(const char *outfile, const char *infile) {
         exit(EXIT_FAILURE);
     } 
 
-    while {
+    while (1) {
         if (fgetc(in) == EOF) {
             break;
         }
