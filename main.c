@@ -20,8 +20,7 @@ int main(int argc, char *argv[])
                 printf("case?");
                 break;
     }
-    printf("test");
-    printf("%d", argc);
+    
    if (argc == 1) {
       mycompress2();
    }
