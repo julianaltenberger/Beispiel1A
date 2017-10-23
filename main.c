@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     printf("%d", argc);
    if (argc == 1) {
        printf("argc0");
-       mycompress("stdout.txt", "stdin.txt");
+       mycompress(stdout, stdin);
    }
 
    if (argc == 3){
