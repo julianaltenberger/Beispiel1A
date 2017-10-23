@@ -23,13 +23,7 @@ int main(int argc, char *argv[])
     printf("test");
     printf("%d", argc);
    if (argc == 1) {
-       char stdin_string[1024];   
-       printf("Please enter a string: ");
-       printf("\n");
-       fgets(stdin_string, 1024, stdin);
-
-
-       mycompress(*stdout, *stdin);
+      mycompress();
    }
 
    if (argc == 3){
