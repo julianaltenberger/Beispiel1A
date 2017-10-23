@@ -5,6 +5,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+int charcount = 0;
+
 int main(int argc, char *argv[])
 {
     char *o_arg = NULL;
@@ -44,7 +46,7 @@ int main(int argc, char *argv[])
                 fprintf(stderr, "No valid Option %s", strerror(errno));
                 exit(EXIT_FAILURE);
             } 
-
+    printf("%i", charcount);
 }
 
 

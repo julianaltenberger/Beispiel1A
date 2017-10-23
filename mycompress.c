@@ -15,7 +15,13 @@ void mycompress(const char *outfile, const char *infile) {
         fprintf(stderr, "fopen input failed: %s\n", strerror(errno));
         exit(EXIT_FAILURE);
     } 
-        
+
+    while {
+        if (fgetc(in) == EOF) {
+            break;
+        }
+        charcount++;
+    }
 
     if ((out = fopen(outfile, "a")) == NULL) {
         fprintf(stderr, "fopen output failed: %s\n", strerror(errno));
@@ -82,7 +88,6 @@ void mycompress2() {
         
         for (i = 1; buffer[i] != '\0'; i++)
             {
-                printf("%s", buffer[i]);
                 if (buffer[i] == buffer[i-1])
                     {
                         k++;
