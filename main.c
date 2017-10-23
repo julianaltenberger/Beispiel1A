@@ -38,14 +38,14 @@ int main(int argc, char *argv[])
             mycompress(o_arg, argv[i]);
         }
 
-        if (argc > 1 && optc == 0) {
-
-            fprintf(stderr, "blalba überleg i ma nochher %s", strerror(errno));
-            exit(EXIT_FAILURE);
-        }
+       
 
    }
+   if (argc > 1 && optc == 0) {
     
+                fprintf(stderr, "No valid Option %s", strerror(errno));
+                exit(EXIT_FAILURE);
+            } 
 
 }
 
