@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     printf("test");
     printf("%d", argc);
    if (argc == 1) {
-      mycompress();
+      mycompress2();
    }
 
    if (argc == 3){

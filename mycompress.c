@@ -62,7 +62,7 @@ void mycompress(const char *outfile, const char *infile) {
 }
 
 
-void mycompress() {
+void mycompress2() {
 
     FILE *in, *out;
     char buffer[1024];
